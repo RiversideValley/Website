@@ -9,7 +9,7 @@
 
 <PageSection id="hero-section">
 	<div class="hero-left">
-		<h1>Hi!🧑‍💻</h1>
+		<h1>Hi!👋</h1>
 		<p>I'm a developer from the UK.</p>
 		<div class="buttons-spacer">
 			<Button

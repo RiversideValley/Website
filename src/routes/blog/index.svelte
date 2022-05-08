@@ -31,7 +31,7 @@
 </script>
 
 <svelte:head>
-	<Metadata title="Codrex • Blog" image="blog" />
+	<Metadata title="Codrex | Blog" image="blog" />
 </svelte:head>
 
 <svelte:window on:scroll={() => window.requestAnimationFrame(() => scrollY = window.scrollY )} />

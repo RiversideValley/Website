@@ -68,7 +68,7 @@
 </script>
 
 <svelte:head>
-	<meta content="Codrex" name="og:site_name">
+	<meta content="Andrex" name="og:site_name">
 
 	<meta content="website" name="og:type">
 
@@ -78,7 +78,7 @@
 		type="image/svg+xml"
 	>
 	<meta
-		content="Tikka, Jupiter, DeveloperWOW64, Developer, Fluent, Svelte, Eclipse, Codrex, Andrex, Python, XAML, Fluent-Svelte, Files, "
+		content="Tikka, Jupiter, DeveloperWOW64, Developer, Fluent, Svelte, Eclipse, computer, code, Codrex, Andrex, Python, XAML, Fluent-Svelte, Files, DeveloperWEB64, DeveloperDWNLD64, DownloadWEB64, "
 		name="keywords"
 	>
 

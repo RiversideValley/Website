@@ -28,7 +28,7 @@
 </script>
 
 <svelte:head>
-	<Metadata title="Codrex • {title}" image={thumbnail} />
+	<Metadata title="{title}" image={thumbnail} />
 </svelte:head>
 
 <section class="blog-post">

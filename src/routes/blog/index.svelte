@@ -58,10 +58,10 @@
 		<div class="main-post-info">
 			<HeaderChip>{
 				new Date(mainPost.metadata.date.replace(/-/g, "/").replace(/T.+/, ""))
-					.toLocaleDateString("en-US", {
-						year: "numeric",
+					.toLocaleDateString("en-GB", {
 						day: "numeric",
-						month: "short"
+						month: "short",
+						year: "numeric"
 					})
 			}</HeaderChip>
 			<h2>{mainPost.metadata.title}</h2>

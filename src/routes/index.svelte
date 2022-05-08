@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-	<Metadata title="Andrex | Home" />
+	<Metadata title="Codrex | Home" />
 </svelte:head>
 
 <HeroSection />

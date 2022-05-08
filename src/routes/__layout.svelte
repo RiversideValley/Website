@@ -68,7 +68,7 @@
 </script>
 
 <svelte:head>
-	<meta content="Andrex" name="og:site_name">
+	<meta content="Codrex" name="og:site_name">
 
 	<meta content="website" name="og:type">
 

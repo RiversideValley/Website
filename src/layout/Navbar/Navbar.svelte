@@ -57,7 +57,7 @@
 					width="32"
 				>
 			</picture>
-			Andrex
+			Codrex
 		</a>
 	</nav>
 	<div class="buttons">

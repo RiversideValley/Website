@@ -38,7 +38,7 @@
 				<source media="(prefers-color-scheme: light)" srcset="/branding/logo.png">
 				<img alt="DeveloperWOW64 logo" height="32" src="/branding/logo.png" width="32">
 			</picture>
-			Codrex
+			Andrex
 		</a>
 		<div class="social-links">
 			<IconButton

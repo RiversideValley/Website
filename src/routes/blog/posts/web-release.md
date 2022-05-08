@@ -2,7 +2,7 @@
 title: The website is ready!
 description: After a long time of hard work - and a lot of bugs - Codrex is finally public on its own domain!
 thumbnail: /branding/banner.jpg
-date: 2022-5-8
+date: 2022-8-5
 author: DeveloperWOW64
 ---
 

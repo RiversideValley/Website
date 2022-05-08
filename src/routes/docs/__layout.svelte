@@ -110,7 +110,7 @@
 </script>
 
 <svelte:head>
-	<Metadata title="{pageTitle ? `Docs - ${pageTitle}` : 'Docs'}"
+	<Metadata title="{pageTitle ? `${pageTitle}` : 'Docs'}"
 	          image="docs"
 	/>
 </svelte:head>

@@ -1,7 +1,7 @@
 ---
 title: Solstice - the video platform
 description: A stylish fluent work-in-progress video platform.
-thumbnail: https://watch.codrex.dev/branding/logo.png
+thumbnail: /screenshots/solstice.png
 date: 2022-5-10
 author: DeveloperWOW64
 ---

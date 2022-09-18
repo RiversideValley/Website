@@ -68,7 +68,7 @@
 </script>
 
 <svelte:head>
-	<meta content="Codrex" name="og:site_name">
+	<meta content="Depth" name="og:site_name">
 
 	<meta content="website" name="og:type">
 
@@ -78,15 +78,12 @@
 		type="image/svg+xml"
 	>
 	<meta
-		content="Tikka, Jupiter, DeveloperWOW64, Developer, Fluent, Svelte, Eclipse, computer, code, Codrex, Andrex, Python, XAML, Fluent-Svelte, Files, DeveloperWEB64, DeveloperDWNLD64, DownloadWEB64, "
+		content="Depth, Protocol, Otherworld, GitHub, Developers, Codename Depth, DepthCDLS, Cube, Area, Heaven, Gaming, Tikka, Jupiter, DeveloperWOW64, Developer, Fluent, Svelte, Eclipse, computer, code, Codrex, Andrex, Python, XAML, Fluent-Svelte, Files, DeveloperWEB64, DeveloperDWNLD64, DownloadWEB64, "
 		name="keywords"
 	>
 
 	<meta content="#084840" name="theme-color">
 
-	<meta content="summary_large_image" name="twitter:card">
-	<meta content="@DeveloperWOW64" name="twitter:site">
-	<meta content="@DeveloperWOW64" name="twitter:creator">
 </svelte:head>
 
 <Navbar buttons={navbarButtons} items={navbarItems} />

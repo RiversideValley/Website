@@ -1,10 +1,13 @@
 <script lang="ts">
 	import { externalLink, PageSection } from "$lib";
 	import { Button, IconButton } from "fluent-svelte";
-	import { links } from "$data/links";
+	import { links, NavbarItem } from "$data/links";
 	import Discord from "$static/ui/icons/discord.svg?raw";
 	import Github from "$static/ui/icons/github.svg?raw";
 	import Twitter from "$static/ui/icons/twitter.svg?raw";
+
+	export let items: NavbarItem[] = [];
+	export let buttons = [];
 
 	let innerWidth = 649; // Don't render the mobile layout before hydrationlet sidebarVisible = false;
 	let sidebarVisible = false;
@@ -43,12 +46,20 @@
 		</a>
 		<div class="social-links">
 			<IconButton
-				href="https://github.com/{links.github.owner}/"
+				href="https://github.com/{links.github}/"
 				title="GitHub"
 				aria-label="GitHub"
 				{...externalLink}
 			>
 				{@html Github}
+			</IconButton>
+			<IconButton
+				href="https://twitter.com/{links.discord}/"
+				title="Discord"
+				aria-label="Discord"
+				{...externalLink}
+			>
+				{@html Discord}
 			</IconButton>
 			<IconButton
 				href="https://twitter.com/{links.twitter}/"
@@ -60,7 +71,7 @@
 			</IconButton>
 		</div>
 		<p></p>
-		<a href="https://vercel.app/" 
+		<a href="https://vercel.app/", 
 			{...externalLink}
 		>
 			<picture>

@@ -9,12 +9,13 @@
 
 	import "fluent-svelte/theme.css";
 
-	import Code from "@fluentui/svg-icons/icons/code_24_regular.svg?raw";
 	import Home from "@fluentui/svg-icons/icons/home_24_regular.svg?raw";
 	import Book from "@fluentui/svg-icons/icons/book_24_regular.svg?raw";
 	import News from "@fluentui/svg-icons/icons/news_24_regular.svg?raw";
 	import Person from "@fluentui/svg-icons/icons/person_24_regular.svg?raw";
-	import Chat from "@fluentui/svg-icons/icons/chat_24_regular.svg?raw";
+	import Twitter from "$static/ui/icons/twitter.svg?raw";
+	import Discord from "$static/ui/icons/discord.svg?raw";
+	import GitHub from "$static/ui/icons/github.svg?raw";
 
 	const { github } = links;
 
@@ -45,8 +46,18 @@
 	const navbarButtons = [
 		{
 			label: "GitHub",
-			href: `https://github.com/${ github.owner }`,
-			icon: Code
+			href: `https://github.com/${ links.github }`,
+			icon: GitHub
+		},
+		{
+			label: "Discord",
+			href: `https://discord.com/${ links.discord }`,
+			icon: Discord
+		},
+		{
+			label: "Twitter",
+			href: `https://twitter.com/${ links.twitter }`,
+			icon: Twitter
 		}
 	];
 

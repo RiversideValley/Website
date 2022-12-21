@@ -1,9 +1,9 @@
 import type { DocsMap } from "$data/docs";
 
 export const links = {
-	github: {
-		owner: "DepthCDLS"
-	}
+	github: "OpenAndrexial",
+	twitter: "OpenAndrexial",
+	discord: "Z74UAQ5vPR"
 };
 
 export type NavbarItem = {

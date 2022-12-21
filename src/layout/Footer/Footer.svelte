@@ -31,6 +31,7 @@
 <svelte:window bind:innerWidth on:click={handleOuterClick} />
 
 <PageSection type="footer" id="page-footer">
+	<div class="rainbow-background"/>
 	<div class="column">
 		<a class="logo" href="/" sveltekit:prefetch>
 			<picture>

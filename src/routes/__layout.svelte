@@ -16,7 +16,7 @@
 	import Person from "@fluentui/svg-icons/icons/person_24_regular.svg?raw";
 	import Chat from "@fluentui/svg-icons/icons/chat_24_regular.svg?raw";
 
-	const { github, discord } = links;
+	const { github } = links;
 
 	const navbarItems: NavbarItem[] = [
 		{
@@ -43,11 +43,6 @@
 	];
 
 	const navbarButtons = [
-		{
-			label: "Discord",
-			href: `https://discord.gg/${ discord }`,
-			icon: Chat
-		},
 		{
 			label: "GitHub",
 			href: `https://github.com/${ github.owner }`,

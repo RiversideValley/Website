@@ -38,6 +38,7 @@
 <svelte:window bind:innerWidth on:click={handleOuterClick} />
 
 <header class="navbar">
+	
 	<nav class="inner">
 		<a class="logo" href="/" sveltekit:prefetch>
 			<picture>
@@ -50,14 +51,14 @@
 					srcset="/branding/logo.png"
 				>
 				<img
-					alt="DeveloperWOW64 Logo"
+					alt="Depth Logo"
 					class="logo-image"
 					height="32"
 					src="/branding/logo.png"
 					width="32"
 				>
 			</picture>
-			Codrex
+			Depth
 		</a>
 	</nav>
 	<div class="buttons">

@@ -9,7 +9,16 @@
 
 <PageSection id="hero-section">
 	<div class="hero-left">
-		<h1>Hi!👋</h1>
+		<div class="rainbow-background"/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<h1>Depth</h1>
 		<p>I'm a developer from the UK.</p>
 		<div class="buttons-spacer">
 			<Button
@@ -49,7 +58,7 @@
 			</picture>
 		</div>
 	</div>
-	<div class="rainbow-background" slot="outer"></div>
+	<div class="rainbow-background"/>
 </PageSection>
 <style lang="scss">
 	@use "HeroSection";

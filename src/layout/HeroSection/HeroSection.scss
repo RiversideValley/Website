@@ -7,6 +7,14 @@
 :global {
 	// Outer section
 	#hero-section {
+		@include flex($direction: column, $justify: center, $align: center);
+		position: relative;
+		min-block-size: 596px;
+		background: url("/ui/mica/light.png") center/170% no-repeat;
+		@media (prefers-color-scheme: dark) {
+			background-image: url("/ui/mica/dark.png");
+		}
+
 		position: relative;
 		overflow: hidden;
 		block-size: 75vh;
@@ -79,7 +87,7 @@
 		// Backdrop canvas
 		.rainbow-background {
 			position: absolute;
-			z-index: -1;
+			z-index: -10;
 			background: 800% 800% /* pos */
 			linear-gradient(
 							to bottom right,
@@ -89,14 +97,15 @@
 							var(--fds-solid-background-base)
 			);
 			animation: rainbow-background-hue-rotate 15s infinite linear,
-			scroll-gradient 15s infinite linear;
+			scroll-gradient 1s infinite linear;
 			inset-inline-end: 0;
 			inset-block-end: 0;
 			inline-size: 60vw;
 			min-inline-size: 100vh;
 			block-size: 100%;
+			size: 1cm;
 
-			mask: url("/ui/hero-mask.png") bottom / cover no-repeat;
+			mask: url("/ui/emoji/wave.svg") bottom / cover no-repeat;
 
 			@media (prefers-color-scheme: light) {
 				opacity: 0.5;
@@ -110,6 +119,82 @@
 			@media screen and (width < 648px) {
 				block-size: 60vh;
 				mask-size: 100% 100%;
+			}
+		}
+	}
+}
+
+// Hero container elements
+.hero- {
+	// Left container
+//	&left {
+		@include flex($direction: column, $justify: center);
+		flex: 1 1 auto;
+//	}
+
+	// Right container
+//	&right {
+		@include flex($align: center);
+		block-size: 100%;
+
+		img {
+			position: absolute;
+			inline-size: auto;
+			max-inline-size: 100%;
+			border: 1px solid var(--fds-surface-stroke-default);
+			border-radius: calc(var(--fds-overlay-corner-radius) / 1.5);
+			background-color: hsl(var(--mica-tint), calc(var(--mica-tint-opacity) / 1.5));
+			box-shadow: var(--fds-dialog-shadow);
+			overflow: hidden;
+			user-select: none;
+			inset-inline-end: 0;
+			block-size: auto;
+			max-block-size: 100%;
+			-webkit-user-drag: none;
+			aspect-ratio: 1280 / 960;
+			backdrop-filter: blur(60px) saturate(150%);
+
+			@media screen and (width > 2048px) {
+				border-radius: var(--fds-overlay-corner-radius);
+			}
+		}
+//	}
+
+	// Inner hero buttons
+	&button-inner {
+		@include flex($direction: column, $align: start);
+		margin-inline-start: 8px;
+		font-size: 1.1rem;
+		line-height: normal;
+
+		h5 {
+			margin: 0;
+			font-size: 1.25rem;
+			font-weight: 600;
+		}
+	}
+
+	// Hero image container
+	&image-container {
+		@include flex($align: center, $justify: center);
+		position: relative;
+		inline-size: 100%;
+		block-size: 100%;
+		max-block-size: 768px;
+	}
+}
+
+// Hero section small device support
+@media screen and (width < 1024px) {
+	:global {
+		// Remove height constraints on outer container
+		#hero-section {
+			block-size: auto;
+			max-block-size: unset;
+
+			// Position inner containers vertically
+			.page-section-inner {
+				grid-template-columns: auto;
 			}
 		}
 	}
@@ -188,6 +273,7 @@
 				grid-template-columns: auto;
 			}
 		}
+		
 	}
 
 	.hero- {

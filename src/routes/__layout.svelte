@@ -13,6 +13,7 @@
 	import Book from "@fluentui/svg-icons/icons/book_24_regular.svg?raw";
 	import News from "@fluentui/svg-icons/icons/news_24_regular.svg?raw";
 	import Person from "@fluentui/svg-icons/icons/person_24_regular.svg?raw";
+	import Mail from "@fluentui/svg-icons/icons/mail_24_filled.svg?raw"
 	import Twitter from "$static/ui/icons/twitter.svg?raw";
 	import Discord from "$static/ui/icons/discord.svg?raw";
 	import GitHub from "$static/ui/icons/github.svg?raw";
@@ -58,6 +59,11 @@
 			label: "Twitter",
 			href: `https://twitter.com/${ links.twitter }`,
 			icon: Twitter
+		},
+		{
+			label: "Mail",
+			href: `mailto:${ links.mail.business }`,
+			icon: Mail
 		}
 	];
 

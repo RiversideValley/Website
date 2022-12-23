@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Tag } from "$data/features";
+	import type { Tag } from "$data/projects";
 	import { Tooltip } from "fluent-svelte";
 
 	export let type: "standard" | "round" = "standard";

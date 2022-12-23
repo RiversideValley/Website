@@ -119,6 +119,7 @@
 			@media screen and (width < 648px) {
 				block-size: 60vh;
 				mask-size: 100% 100%;
+				-webkit-mask-size: 100%, 100%;
 			}
 		}
 	}

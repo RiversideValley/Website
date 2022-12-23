@@ -90,8 +90,8 @@
 			{/each}
 		{/if}
 		<div class="divider"></div>
-		<Tooltip text="#supportukraine" placement="bottom" delay={200} offset={0}>
-			<span class="support-ukraine" aria-label="Ukrainian flag in support of Ukraine and its people, #supportukraine"></span>
+		<Tooltip text="Merry Christmas!" placement="bottom" delay={200} offset={0}>
+			<span class="seasonal-message" aria-label="Christmas Tree to signify Christmas time is near, Merry Christmas!"></span>
 		</Tooltip>
 		{#if innerWidth > 648}
 			{#each buttons as { icon, href, label }}

@@ -18,7 +18,7 @@ export const featureCards: FeatureCardData[] = [
 	{
 		title: "Emerald",
 		description:
-			"A stylish fluent Minecraft launcher made using WinUI technologies in the fast C# language really pushes the boundary of the platform. A true compliment to any gamer's setup.",
+			"A swift Minecraft launcher made using WinUI technologies in the fast C# language really pushes the boundary of the platform. A true compliment to any gamer's setup.",
 		icon: Games
 	},
 	{

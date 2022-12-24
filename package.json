@@ -35,7 +35,7 @@
 		"remark-github": "^11.2.2",
 		"remark-slug": "^7.0.1",
 		"sass": "^1.49.7",
-		"svelte": "^3.46.4",
+		"svelte": "^3.55.0",
 		"svelte-check": "^2.4.3",
 		"svelte-preprocess": "^4.10.2",
 		"tslib": "^2.3.1",

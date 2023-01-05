@@ -46,13 +46,13 @@ export const fluxExamples = [
 		name: "Sample1",
 		extension: "py",
 		icon: "/ui/icons/code.svg",
-		code: `# Sample: Hello World\nfrom Foundation import *\n\nConsole.Write("Hello World!") # This prints write after the last printed text, without making a new line.\n# With a new line:\nConsole.WriteLine("Hello World!")`
+		code: `# Sample: Hello World\nfrom Foundation import *\n\nSystem.Console.Write("Hello World!") # This prints write after the last printed text, without making a new line.\n# With a new line:\nSystem.Console.WriteLine("Hello World!")`
 	},
 	{
 		name: "Sample2",
 		extension: "py",
 		icon: "/ui/icons/code.svg",
-		code: `# Sample: Present the current time, with seconds to the user.\nfrom Foundation import *\n\nCurrentTime = System.Chronology.Time("Local", WithSeconds = True)\nConsole.WriteLine(CurrentTime)`
+		code: `# Sample: Present the current time, with seconds to the user.\nfrom Foundation import *\n\nCurrentTime = System.Chronology.Time("Local", WithSeconds = True)\nSystem.Console.WriteLine(CurrentTime)`
 	},
 	{
 		name: "Sample3",

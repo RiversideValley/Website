@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-	<Metadata title="Codrex | About" image="about" />
+	<Metadata title="Depth | About" image="about" />
 </svelte:head>
 
 <svelte:window on:scroll={() => window.requestAnimationFrame(() => scrollY = window.scrollY )} />

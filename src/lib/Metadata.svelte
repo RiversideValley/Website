@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { page } from "$app/stores";
 
-	export let title = "Codrex";
+	export let title = "Depth";
 	export let image = "";
-	$: imageFile = image.startsWith("/") ? image : `/branding/banner-${image}.png`
+	$: imageFile = image.startsWith("/") ? image : `/branding/banner.png`
 </script>
 
 <title>{title}</title>

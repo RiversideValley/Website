@@ -1,61 +1,38 @@
 <script lang="ts">
 	import { externalLink, PageSection } from "$lib";
-	import { Button } from "fluent-svelte";
+	import { Button, TextBlock } from "fluent-svelte";
 	import { links } from "$data/links";
-	import Code from "@fluentui/svg-icons/icons/code_24_regular.svg?raw";
-	import Folder from "@fluentui/svg-icons/icons/folder_24_regular.svg?raw";
-
+	import Github from "$static/ui/icons/github.svg?raw";
+	import Games from "@fluentui/svg-icons/icons/games_24_regular.svg?raw"
 </script>
 
 <PageSection id="hero-section">
 	<div class="hero-left">
 		<div class="rainbow-background"/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<h1>Depth</h1>
-		<p>I'm a developer from the UK.</p>
+		<h1>Hello from Depth</h1>
+		<p size="6">The future of computing starts now.</p>
 		<div class="buttons-spacer">
 			<Button
 				variant="accent"
-				href="https://github.com/{links.github.owner}/?tab=repositories"
+				href="https://github.com/orgs/{links.github}/repositories"
 				{...externalLink}
 			>
-				{@html Code}
+				{@html Github}
 				<div class="hero-button-inner">
 					<h5>GitHub</h5>
-					<span>Take a look at my repositories!</span>
+					<span>Take a look at some of our work!</span>
 				</div>
 			</Button>
 			<Button
-				href="https://github.com/files-community"
+				href="https://github.com/{links.github}/Emerald"
 				{...externalLink}
 			>
-				{@html Folder}
+				{@html Games}
 				<div class="hero-button-inner">
-					<h5>Files</h5>
-					<span>An awesome project, take a look!</span>
+					<h5>Emerald</h5>
+					<span>An awesome minecraft client, take a look!</span>
 				</div>
 			</Button>
-		</div>
-	</div>
-	<div class="hero-right">
-		<div class="hero-image-container">
-			<picture>
-				<source
-					media="(prefers-color-scheme: dark)"
-					srcset="/screenshots/hero-dark.png"
-				>
-				<source
-					media="(prefers-color-scheme: light)"
-					srcset="/screenshots/hero-light.png"
-				>
-			</picture>
 		</div>
 	</div>
 	<div class="rainbow-background"/>

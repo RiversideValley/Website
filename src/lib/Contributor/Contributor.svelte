@@ -2,31 +2,29 @@
 	import { externalLink } from "$lib";
 	import { PersonPicture } from "fluent-svelte";
 
-	export let html_url: string = undefined;
-	export let avatar_url: string = undefined;
-	export let type = "User";
-	export let login = "Unknown";
-	export let contributions = 0;
+	export let html_url = "Undefined";
+	export let avatar_url = "Undefined";
+	export let login = "Undefined";
+	export let name = "Undefined";
+	export let location = "Undefined";
 </script>
 
-{#if type === "User"}
-	<a
-		tabindex="-1"
-		class="contributor"
-		href={html_url}
-		{...externalLink}
-	>
-		<PersonPicture src={avatar_url}
-		               size={32}
-		               alt="{login}'s avatar"
-		               loading="lazy"
-		/>
-		<div class="info">
-			<h5>{login}</h5>
-			<span>{contributions} {contributions > 1 ? "contributions" : "contribution"}</span>
-		</div>
-	</a>
-{/if}
+<a
+	tabindex="-1"
+	class="contributor"
+	href={html_url}
+>
+	<PersonPicture 
+		src={avatar_url}
+	    size={32}
+	   	alt="{login}'s avatar"
+	    loading="lazy"
+	/>
+	<div class="info">
+		<h5>{name}</h5>
+		<span>{location}</span>
+	</div>
+</a>
 
 <style lang="scss">
 	@use "./Contributor";

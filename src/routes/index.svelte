@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { FluxSection, EmeraldSection, Footer, HeroSection } from "$layout";
+	import { OpenSection, IdeaSection, FluxSection, EmeraldSection, HeroSection } from "$layout";
 	import { Metadata } from "$lib";
 </script>
 
@@ -9,6 +9,10 @@
 
 <HeroSection />
 
-<EmeraldSection />
+<OpenSection/>
+
+<IdeaSection/>
+
+<!--<EmeraldSection/>-->
 
 <FluxSection />

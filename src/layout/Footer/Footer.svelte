@@ -5,9 +5,7 @@
 	import Discord from "$static/ui/icons/discord.svg?raw";
 	import Github from "$static/ui/icons/github.svg?raw";
 	import Twitter from "$static/ui/icons/twitter.svg?raw";
-
-	export let items: NavbarItem[] = [];
-	export let buttons = [];
+	import Mail from "@fluentui/svg-icons/icons/mail_24_filled.svg?raw"
 
 	let innerWidth = 649; // Don't render the mobile layout before hydrationlet sidebarVisible = false;
 	let sidebarVisible = false;
@@ -42,7 +40,7 @@
 				<source media="(prefers-color-scheme: light)" srcset="/branding/logo.png">
 				<img alt="DeveloperWOW64 logo" height="32" src="/branding/logo.png" width="32">
 			</picture>
-			Codrex
+			Depth
 		</a>
 		<div class="social-links">
 			<IconButton
@@ -69,15 +67,21 @@
 			>
 				{@html Twitter}
 			</IconButton>
+			<IconButton
+				href="mailto:{links.mail.business}/"
+				title="Mail"
+				aria-label="Mail"
+				{...externalLink}
+			>
+				{@html Mail}
+			</IconButton>
 		</div>
 		<p></p>
-		<a href="https://vercel.app/", 
-			{...externalLink}
-		>
+		<a href="https://vercel.app" {...externalLink}>
 			<picture>
 				<source media="(prefers-color-scheme: dark)" srcset="/branding/vercel-dark.svg">
 				<source media="(prefers-color-scheme: light)" srcset="/branding/vercel-light.svg">
-				<img alt= "Powered by Vercel" src="/branding/logo.png" width="192">
+				<img alt= "Powered by Vercel" src="/branding/vercel-dark.png" width="192">
 			</picture>
 		</a>
 	</div>

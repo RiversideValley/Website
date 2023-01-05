@@ -1,7 +1,7 @@
 import Games from "@fluentui/svg-icons/icons/games_24_regular.svg?raw";
 import Flash from "@fluentui/svg-icons/icons/flash_24_regular.svg?raw";
 import Pen from "@fluentui/svg-icons/icons/calligraphy_pen_24_regular.svg?raw";
-import Link from "@fluentui/svg-icons/icons/link_square_24_regular.svg?raw";
+import Star from "@fluentui/svg-icons/icons/star_emphasis_24_regular.svg?raw";
 
 export type FeatureCardData = {
 	title: string;
@@ -34,14 +34,14 @@ export const featureCards: FeatureCardData[] = [
 		icon: Pen
 	},
 	{
-		title: "Protocol",
+		title: "Otherworld",
 		description:
-			"A worldwide gaming platform where anyone can make games for others to download and play! With games even by Depth itself, Protocol really is quality for gamers with high standards.",
-		icon: Link
+			"An engaging and exhilerating 12+ videogame series by Depth, quality for gamers with high standards. Made using Depth's Momentum game engine to deliver stunning graphics with speedy performance for any platform.",
+		icon: Star
 	}
 ];
 
-export const fluxExamples = [
+export const fluxExamples = [ 
 	{
 		name: "Sample1",
 		extension: "py",

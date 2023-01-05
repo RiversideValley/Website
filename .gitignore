@@ -4,4 +4,4 @@ node_modules
 /package
 /.idea
 /build
-/.vscode/Website.code-workspace
+/.vercel_build_output

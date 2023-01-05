@@ -1,15 +1,13 @@
 <script lang="ts">
-	import type { Tag } from "$data/projects";
 	import { Tooltip } from "fluent-svelte";
-
 	export let type: "standard" | "round" = "standard";
-	export let colorName: Tag = { name: "Black", color: "#000" };
+//	export let colorName: Tag = { name: "Black", color: "#000" };
 	export let value: any = undefined;
 	export let group: any = [];
 	let className = "";
 	export { className as class };
 </script>
-
+<!--
 <Tooltip text={colorName.name}>
 	<input
 		{...$$restProps}
@@ -23,7 +21,7 @@
 		type="radio"
 		{value}
 	>
-</Tooltip>
+</Tooltip>-->
 
 <style lang="scss">
 	@use "ColorSwatch";

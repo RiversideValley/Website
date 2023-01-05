@@ -1,7 +1,7 @@
 {
-	"name": "Codrex",
-	"version": "1",
-	"repository": "https://github.com/developerwow64/developerweb64",
+	"name": "Depth",
+	"version": "1.0.0",
+	"repository": "https://github.com/OpenAndrexial/Website",
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",

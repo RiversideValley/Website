@@ -1,9 +1,9 @@
 import type { DocsMap } from "$data/docs";
 
 export const links = {
-	github: "OpenAndrexial",
-	twitter: "OpenAndrexial",
-	discord: "Z74UAQ5vPR",
+	github: "RiversideValley",
+	twitter: "RIVERS1D3",
+	discord: "invite/Z74UAQ5vPR",
 	mail: {
 		business: "business@andrexial.org.uk",
 		personal: "me@andrexial.org.uk",

@@ -1,2 +1,0 @@
-RewriteEngine on
-Redirect 301 /.well-known/webfinger https://plaza.theriversi.de/.well-known/webfinger

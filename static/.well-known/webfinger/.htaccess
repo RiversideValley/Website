@@ -1,1 +1,1 @@
-Redirect 301 / http://plaza.theriversi.de
+Redirect 301 / http://plaza.theriversi.de/.well-known/webfinger

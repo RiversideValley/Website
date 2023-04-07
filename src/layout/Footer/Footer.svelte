@@ -38,9 +38,9 @@
 			<picture>
 				<source media="(prefers-color-scheme: dark)" srcset="/branding/logo.png">
 				<source media="(prefers-color-scheme: light)" srcset="/branding/logo.png">
-				<img alt="DeveloperWOW64 logo" height="32" src="/branding/logo.png" width="32">
+				<img alt="Riverside logo" height="32" src="/branding/logo.png" width="32">
 			</picture>
-			Depth
+			Riverside Valley
 		</a>
 		<div class="social-links">
 			<IconButton
@@ -84,30 +84,6 @@
 				<img alt= "Powered by Vercel" src="/branding/vercel-dark.png" width="192">
 			</picture>
 		</a>
-	</div>
-	<div class="column">
-		{#if innerWidth < 648}
-		<div></div>
-		{:else}
-		<picture>
-			<source
-				media="(prefers-color-scheme: dark)"
-				srcset="https://github-readme-stats.vercel.app/api?username=DeveloperWOW64&include_all_commits=true&show_icons=true&hide_border=true&theme=dark"
-				
-			>
-			<source
-				media="(prefers-color-scheme: light)"
-				srcset="https://github-readme-stats.vercel.app/api?username=DeveloperWOW64&include_all_commits=true&show_icons=true&hide_border=true&theme=light"
-				
-			>
-			<img
-				alt="DeveloperWOW64's GitHub Status"
-				class="logo-image"
-				src="https://github-readme-stats.vercel.app/api?username=DeveloperWOW64&include_all_commits=true&show_icons=true&hide_border=true&theme=dark"
-				
-			>
-		</picture>
-		{/if}
 	</div>
 	<p> </p>
 	<div class="column">

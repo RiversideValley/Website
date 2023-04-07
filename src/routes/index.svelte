@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-	<Metadata title="Depth | Home" />
+	<Metadata title="Riverside | The future of computing starts now." />
 </svelte:head>
 
 <HeroSection />

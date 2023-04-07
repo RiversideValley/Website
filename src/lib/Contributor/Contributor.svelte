@@ -5,7 +5,6 @@
 	export let html_url = "Undefined";
 	export let avatar_url = "Undefined";
 	export let login = "Undefined";
-	export let name = "Undefined";
 	export let location = "Undefined";
 </script>
 
@@ -21,8 +20,8 @@
 	    loading="lazy"
 	/>
 	<div class="info">
-		<h5>{name}</h5>
-		<span>{location}</span>
+		<h5>{login}</h5>
+		<span>Member</span>
 	</div>
 </a>
 

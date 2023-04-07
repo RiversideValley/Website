@@ -22,9 +22,9 @@ export const featureCards: FeatureCardData[] = [
 		icon: Games
 	},
 	{
-		title: "Flux",
+		title: "Fluid",
 		description:
-			"A professional yet usable Python framework, fit for any developer. Flux is an easy language to learn targeting at all developers across the world. Due to it's Python architecture, it can process normal Python code, heaven for any developer.",
+			"A usable yet professional programming framework, fit for any developer. Fluid is an easy language to learn targeting at all developers across the world. Due to it's Python and C architecture, it can process normal Python code, heaven for any developer.",
 		icon: Flash
 	},
 	{
@@ -44,20 +44,20 @@ export const featureCards: FeatureCardData[] = [
 export const fluxExamples = [ 
 	{
 		name: "Sample1",
-		extension: "py",
+		extension: "fl",
 		icon: "/ui/icons/code.svg",
-		code: `# Sample: Hello World\nfrom Foundation import *\n\nSystem.Console.Write("Hello World!") # This prints write after the last printed text, without making a new line.\n# With a new line:\nSystem.Console.WriteLine("Hello World!")`
+		code: `# Sample: Hello World\nfrom System import Console;\n\nConsole.Write("Hello World!") # This prints write after the last printed text, without making a new line.\n# With a new line:\nConsole.WriteLine("Hello World!")`
 	},
 	{
 		name: "Sample2",
-		extension: "py",
+		extension: "fl",
 		icon: "/ui/icons/code.svg",
-		code: `# Sample: Present the current time, with seconds to the user.\nfrom Foundation import *\n\nCurrentTime = System.Chronology.Time("Local", WithSeconds = True)\nSystem.Console.WriteLine(CurrentTime)`
-	},
-	{
-		name: "Sample3",
-		extension: "py",
-		icon: "/ui/icons/code.svg",
-		code: `# Sample: Obtains Outlook emails on the Exchange server and compares them with local versions.\n# This sample relies on the non-existent Microsoft.Exchange API, so technically this code could not be run.\nfrom Foundation import *\n\ndef OnlineOrLocalMailDiff:\n  msgdiff = Andrexial.Esmerelda.Core.Calculation.Difference(Andrexial.Esmerelda.Core.Data.Query(Microsoft.Exchange.Outlook.Inbox, param=System.Formatting.Json(f"user: crescent@andrexial.org.uk, pass: {Andrexial.Esmerelda.Enigma.Encryption.Vault.Password.Crescent.Pass}")), Andrexial.Esmerelda.Core.Data.Query(Local:Microsoft.Exchange.Outlook.Inbox, param=System.Formatting.Json(f"user: crescent@andrexial.org.uk"))\n  return msgdiff`,
+		code: `# Sample: Present the current time, with seconds to the user.\nfrom System import Chrononlogy, Console;\n\nCurrentTime = Chronology.Time("Local", WithSeconds = True)\nConsole.WriteLine(CurrentTime)`
 	}
+//	{
+//		name: "Sample3",
+//		extension: "py",
+//		icon: "/ui/icons/code.svg",
+//		code: `# Sample: Obtains Outlook emails on the Exchange server and compares them with local versions.\n# This sample relies on the non-existent Microsoft.Exchange API, so technically this code could not be run.\nfrom Microsoft import Exchange\nfrom Riverside import Esmerelda\n\ndef OnlineOrLocalMailDiff:\n  return Esmerelda.Core.Calculation.Difference(Andrexial.Esmerelda.Core.Data.Query(Microsoft.Exchange.Outlook.Inbox, param=System.Formatting.Json(f"user: crescent@andrexial.org.uk, pass: {Andrexial.Esmerelda.Enigma.Encryption.Vault.Password.Crescent.Pass}")), Andrexial.Esmerelda.Core.Data.Query(Local:Microsoft.Exchange.Outlook.Inbox, param=System.Formatting.Json(f"user: lamparter"))`,
+//	}
 ];

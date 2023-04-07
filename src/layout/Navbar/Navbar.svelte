@@ -51,14 +51,14 @@
 					srcset="/branding/logo.png"
 				>
 				<img
-					alt="Depth Logo"
+					alt="Riverside Logo"
 					class="logo-image"
 					height="32"
 					src="/branding/logo.png"
 					width="32"
 				>
 			</picture>
-			Depth
+			Riverside Valley
 		</a>
 	</nav>
 	<div class="buttons">
@@ -90,8 +90,11 @@
 			{/each}
 		{/if}
 		<div class="divider"></div>
-		<Tooltip text="Merry Christmas!" placement="bottom" delay={200} offset={0}>
+		<!--<Tooltip text="Merry Christmas!" placement="bottom" delay={200} offset={0}>
 			<span class="seasonal-message" aria-label="Christmas Tree to signify Christmas time is near, Merry Christmas!"></span>
+		</Tooltip>-->
+		<Tooltip text="Happy Easter!" placement="bottom" delay={200} offset={0}>
+			<span class="seasonal-message" aria-label="Easter bunny to signify Easter is near, Happy Easter!"></span>
 		</Tooltip>
 		{#if innerWidth > 648}
 			{#each buttons as { icon, href, label }}

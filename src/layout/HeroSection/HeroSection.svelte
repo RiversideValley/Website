@@ -9,7 +9,7 @@
 <PageSection id="hero-section">
 	<div class="hero-left">
 		<div class="rainbow-background"/>
-		<h1>Hello from Depth</h1>
+		<h1>Hello from Riverside</h1>
 		<p size="6">The future of computing starts now.</p>
 		<div class="buttons-spacer">
 			<Button

@@ -5,9 +5,9 @@ export const links = {
 	twitter: "RIVERS1D3",
 	discord: "invite/Z74UAQ5vPR",
 	mail: {
-		business: "business@andrexial.org.uk",
-		personal: "me@andrexial.org.uk",
-		apply: "apply@andrexial.org.uk"
+		business: "business@theriversi.de",
+		personal: "me@theriversi.de",
+		apply: "apply@theriversi.de"
 	}
 };
 

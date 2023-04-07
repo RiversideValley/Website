@@ -30,13 +30,13 @@ export const featureCards: FeatureCardData[] = [
 	{
 		title: "Inspire",
 		description:
-			"A powerful and helpful integrated development environment enhanced for Flux development, yet supporting any of your favourite languages. Powered by Esmerelda AI, it can detect what you're aiming to write or give you helpful tips on how to improve, for free.",
+			"A powerful and helpful integrated development environment which enhances your experience has a developer, with support for all of your favourite languages. Powered by Esmerelda AI, it can detect what you're aiming to write or give you helpful tips on how to improve, for free.",
 		icon: Pen
 	},
 	{
 		title: "Otherworld",
 		description:
-			"An engaging and exhilerating 12+ videogame series by Depth, quality for gamers with high standards. Made using Depth's Momentum game engine to deliver stunning graphics with speedy performance for any platform.",
+			"An engaging and exhilerating 12+ videogame series by Riverside Valley, quality for gamers with high standards. Made using our Momentum game engine to deliver stunning graphics with speedy performance for any platform.",
 		icon: Star
 	}
 ];
@@ -56,7 +56,7 @@ export const fluxExamples = [
 	}
 //	{
 //		name: "Sample3",
-//		extension: "py",
+//		extension: "fl",
 //		icon: "/ui/icons/code.svg",
 //		code: `# Sample: Obtains Outlook emails on the Exchange server and compares them with local versions.\n# This sample relies on the non-existent Microsoft.Exchange API, so technically this code could not be run.\nfrom Microsoft import Exchange\nfrom Riverside import Esmerelda\n\ndef OnlineOrLocalMailDiff:\n  return Esmerelda.Core.Calculation.Difference(Andrexial.Esmerelda.Core.Data.Query(Microsoft.Exchange.Outlook.Inbox, param=System.Formatting.Json(f"user: crescent@andrexial.org.uk, pass: {Andrexial.Esmerelda.Enigma.Encryption.Vault.Password.Crescent.Pass}")), Andrexial.Esmerelda.Core.Data.Query(Local:Microsoft.Exchange.Outlook.Inbox, param=System.Formatting.Json(f"user: lamparter"))`,
 //	}

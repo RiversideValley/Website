@@ -3,13 +3,13 @@
 
 <script lang="ts">
 	import { PageSection, Metadata } from "$lib";
-
+	import { links } from "$data/links"
 
 	let scrollY: number;
 </script>
 
 <svelte:head>
-	<Metadata title="Depth | About" image="about" />
+	<Metadata title="Riverside | The future of computing starts now." image="about" />
 </svelte:head>
 
 <svelte:window on:scroll={() => window.requestAnimationFrame(() => scrollY = window.scrollY )} />
@@ -18,32 +18,47 @@
 	<div class="blog-backdrop">
 		<img
 			alt="Visual Studio Code"
-			src="/screenshots/code-dark.png"
+			src="https://user-images.githubusercontent.com/71598437/189516578-6acd4c56-7b4e-4d62-99b4-d3ad2e184696.png"
 			style:transform="translateY({Math.floor(scrollY / 2.5)}px)"
 			width="0"
 		>
 	</div>
 	<div class="main-post">
-		<img
-			alt="Cats"
-			src="/about-resources/cats.png"
-		>
+		<picture>
+			<source
+				media="(prefers-color-scheme: dark)"
+				srcset="/branding/banner-white.png"
+			>
+			<source
+				media="(prefers-color-scheme: light)"
+				srcset="/branding/banner.png"
+			>
+			<img
+				alt="Riverside Banner"
+				class="logo-image"
+
+				src="/branding/banner.png"
+			>
+		</picture>
 		<div class="about">
-			<h3>Hello. I'm a developer.</h3>
+			<span>The future of computing starts now.</span>
+
+			<h3>👋 Hello! Ciao! こんにちは！</h3>
 			<p>
-				Welcome! My name is Jupiter. My pronouns are 'he/him'. I currently know bits of XAML, Python and Svelte.
-				Obviously, nobody is infallible and so I may make mistakes. If such an event occurs, feel free to tell me - I wouldn't be hurt.
-				Here's an interesting fact about me.. I can recite π to 16 decimal places: 3.1415926535897932.
+				We're Riverside Valley, an outstanding organisation owned by the Riverside Valley Corporation IT conglomerate that believes in people, not money.
 			</p>
 			<p>	
-				Something I like to do while I'm not sitting down at my DELL XPS laptop is listen to music - just get lost in the wave of sounds.
-				My favourite movie right now is by far Encanto of Disney. My favourite video game would be Miitopia.
-			</p>
-			<p>
-				By the way, those cats' names are Hope and Joy, my great-aunt's sister cats. The're both very cute - though Hope can get up to a lot of trouble..
+				🔭 We're currently working on so many projects! Look out for Emerald, Fluid, Otherworld, and Inspire.
+				<br/>
+				📫 How to reach us: <a href="mailto:{links.mail.business}">{links.mail.business}</a>
+				<br/>
+				😕 Need help? <a href="mailto:{links.mail.support}">{links.mail.support}</a>
+				<br/>
+				🧑‍💼 Interested in applying? <a href="mailto:{links.mail.apply}">{links.mail.apply}</a>
 			</p>
 		</div>
-	</div>	
+	</div>
+	<p>🏞️ Riverside</p>
 </PageSection>
 
 <style lang="scss">

@@ -6,7 +6,7 @@ export const links = {
 	discord: "invite/Z74UAQ5vPR",
 	mail: {
 		business: "business@theriversi.de",
-		personal: "me@theriversi.de",
+		support: "support@theriversi.de",
 		apply: "apply@theriversi.de"
 	}
 };

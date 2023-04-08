@@ -87,14 +87,11 @@
 			<Button variant="accent" sveltekit:prefetch href="/">
 				Home
 			</Button>
-			<Button variant="accent" sveltekit:prefetch href="/docs">
-				Documentation
-			</Button>
-			<Button variant="accent" sveltekit:prefetch href="/blog">
-				Blog
+			<Button variant="accent" sveltekit:prefetch href="/apps">
+				Appcenter
 			</Button>
 			<Button variant="accent" sveltekit:prefetch href="/about">
-				About
+				Who we are
 			</Button>
 		</div>
 </PageSection>

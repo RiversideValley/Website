@@ -12,6 +12,7 @@
 	import Home from "@fluentui/svg-icons/icons/home_24_regular.svg?raw";
 	import Book from "@fluentui/svg-icons/icons/book_24_regular.svg?raw";
 	import News from "@fluentui/svg-icons/icons/news_24_regular.svg?raw";
+	import Appcenter from "@fluentui/svg-icons/icons/apps_24_regular.svg?raw";
 	import Person from "@fluentui/svg-icons/icons/person_24_regular.svg?raw";
 	import YouTube from "@fluentui/svg-icons/icons/video_clip_24_filled.svg?raw";
 	import Figma from "@fluentui/svg-icons/icons/design_ideas_24_filled.svg?raw"
@@ -27,23 +28,17 @@
 			name: "Home",
 			path: "/",
 			icon: Home
+		},
+		{
+			name: "Apps",
+			path: "/apps",
+			icon: Appcenter
+		},
+		{
+			name: "About",
+			path: "/about",
+			icon: Person
 		}
-//		{
-//			name: "Docs",
-//			path: "/docs",
-//			sidebarTree: docs,
-//			icon: Book
-//		},
-//		{
-//			name: "Blog",
-//			path: "/blog",
-//			icon: News
-//		},
-//		{
-//			name: "About",
-//			path: "/about",
-//			icon: Person
-//		}
 	];
 
 	const navbarButtons = [

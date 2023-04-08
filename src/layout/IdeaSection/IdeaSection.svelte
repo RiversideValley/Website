@@ -29,12 +29,12 @@
 	<div class="features-section-right">
 		<HeaderChip>
 			<!-- svelte-ignore a11y-missing-attribute -->
-			<img src="https://img.icons8.com/fluency/idea.png">
+			<img src="ui/emoji/lightbulb.png" width="48">
 		</HeaderChip>
 		<h2>Our ideas</h2>
 		<p>
-			At Depth, we believe that everyone has the power to make perfect creations. This counts for ideas and concepts, too!
-			Below is a curated collection of concepts and projects coming out of Depth. Search them up on GitHub and start contributing!
+			At Riverside Valley, we believe that everyone has the power to make perfect creations. This counts for ideas and concepts, too!
+			Below is a curated collection of our concepts and projects. We hope you enjoy them!
 		</p>
 		<hr />
 		<div class="feature-cards-container">

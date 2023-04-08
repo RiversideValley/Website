@@ -35,13 +35,6 @@
 		flex: 0 0 auto;
 		padding: 12px 24px 24px;
 
-		img {
-			inline-size: 36px;
-			block-size: 36px;
-			border: 1px solid var(--fds-card-stroke-default);
-			border-radius: 50%;
-		}
-
 		.post-info {
 			@include flex($direction: column);
 			color: var(--fds-text-tertiary);

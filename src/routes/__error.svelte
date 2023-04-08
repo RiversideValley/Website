@@ -18,7 +18,7 @@
 </script>
 
 <svelte:head>
-	<Metadata />
+	<Metadata title="Riverside | Uh Oh!" />
 </svelte:head>
 
 <section class="error-page">

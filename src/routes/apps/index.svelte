@@ -3,7 +3,7 @@
 
 	export const load: Load = async ({ fetch }) => ({
 		props: {
-			posts: await fetch("/blog.json").then(response => response.json())
+			posts: await fetch("/apps.json").then(response => response.json())
 		}
 	})
 </script>
@@ -38,15 +38,23 @@
 
 <PageSection id="blog">
 	<div class="blog-backdrop">
-		<img
-			alt=""
-			src={mainPost.metadata.thumbnail}
-			style:transform="translateY({Math.floor(scrollY / 2.5)}px)"
-			width="0"
-		>
+		style="
+			--hero-background-image-light: url(/en-us/media/home-and-directory/home-hero_light.png?branch=main);
+			--hero-background-image-dark: url(/en-us/media/home-and-directory/home-hero_dark.png?branch=main);
+		"
+		<picture>
+			<source srcset="https://learn.microsoft.com/en-us/media/home-and-directory/home-hero_light.png?branch=main" media="(prefers-color-scheme: light)" />
+			<source srcset="https://learn.microsoft.com/en-us/media/home-and-directory/home-hero_dark.png?branch=main" media="(prefers-color-scheme: dark)" />
+			<img
+				alt="Riverside Valley"
+				src="https://learn.microsoft.com/en-us/media/home-and-directory/home-hero_light.png?branch=main"
+				style:transform="translateY({Math.floor(scrollY / 2.5)}px)"
+				width="0"
+			>
+		</picture>
 	</div>
 	<div class="main-post">
-		<a href="/blog/{mainPost.path.replace(/\.[^/.]+$/, '')}/">
+		<a href="/apps/{mainPost.path.replace(/\.[^/.]+$/, '')}/">
 			<img
 				alt="Main post thumbnail"
 				height="422"
@@ -56,18 +64,10 @@
 			>
 		</a>
 		<div class="main-post-info">
-			<HeaderChip>{
-				new Date(mainPost.metadata.date.replace(/-/g, "/").replace(/T.+/, ""))
-					.toLocaleDateString("en-GB", {
-						day: "numeric",
-						month: "short",
-						year: "numeric"
-					})
-			}</HeaderChip>
 			<h2>{mainPost.metadata.title}</h2>
 			<p>{mainPost.metadata.description}</p>
 			<Button
-				href="/blog/{mainPost.path.replace(/\.[^/.]+$/, '')}/"
+				href="/apps/{mainPost.path.replace(/\.[^/.]+$/, '')}/"
 				variant="accent"
 			>
 				Read More
@@ -81,7 +81,7 @@
 			{/each}
 		</div>
 	{:else}
-		<p>More posts coming soon!</p>
+		<p>More apps coming soon!</p>
 	{/if}
 </PageSection>
 

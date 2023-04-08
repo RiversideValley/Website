@@ -1,7 +1,7 @@
 import type { RequestHandler } from "@sveltejs/kit";
 
 export const get: RequestHandler = async () => {
-	const modules = import.meta.glob("./posts/*.md");
+	const modules = import.meta.glob("./get/*.md");
 	let body = [];
 
 	for (const path in modules) {
@@ -14,7 +14,7 @@ export const get: RequestHandler = async () => {
 			})
 		);
 	}
-
+	
 	const posts = await Promise.all(body);
 
 	posts.sort((a, b) => {

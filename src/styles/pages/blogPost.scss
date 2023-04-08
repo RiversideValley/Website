@@ -52,6 +52,32 @@
 			border: 1px solid var(--fds-card-stroke-default);
 			border-radius: 50%;
 		}
+		
+		:global {
+			.menu-flyout {
+				min-inline-size: 120px;
+
+				&-container {
+					margin-inline-start: auto;
+				}
+			}
+		}
+	}
+
+	&info-riverside {
+		@include flex($align: center, $gap: 12px);
+		margin-block-end: 24px;
+		padding: 18px 0;
+		border-block-end: 1px solid var(--fds-divider-stroke-default);
+		background-color: var(--fds-solid-background-secondary);
+		color: var(--fds-text-tertiary);
+
+		img {
+			inline-size: 32px;
+			block-size: 32px;
+//			border: 1px solid var(--fds-card-stroke-default);
+//			border-radius: 50%;
+		}
 
 		:global {
 			.menu-flyout {

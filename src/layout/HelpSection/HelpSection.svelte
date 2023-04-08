@@ -9,9 +9,10 @@
 		<div class="community-section-text">
 			<HeaderChip>
 			<!-- svelte-ignore a11y-missing-attribute -->
-			<img src="https://img.icons8.com/fluency/project">
+			<img src="ui/emoji/sponsor.png" width="48">
 			</HeaderChip>
-			<h2>Codename Fluxduct</h2>
+			<h2>You can help too.</h2>
+			<h4>And that's not just financially.</h4>
 			<p>
 				Flux - making the world's best 'fkcd' programming language.
 				Flux aims to bring coding to all ages, as well as making it easier for those already coding.
@@ -23,5 +24,5 @@
 	</div>
 </PageSection>
 
-<style lang="scss">@use "./FluxSection";
+<style lang="scss">@use "./HelpSection";
 </style>

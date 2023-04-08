@@ -11,7 +11,7 @@
 
 <a
 	class="blog-card"
-	href="/blog/{path.replace(/\.[^/.]+$/, '')}"
+	href="/apps/{path.replace(/\.[^/.]+$/, '')}"
 	{...$$restProps}
 >
 	<img alt="{title} thumbnail" class="thumbnail" src={thumbnail}>
@@ -20,29 +20,43 @@
 		<span>{description}</span>
 	</div>
 	<footer>
-		<img
-			alt="{author} avatar"
-			loading="lazy"
-			src="https://github.com/{author}.png"
-		>
-		<div class="post-info">
-			<object aria-label="Author link">
-				<a
-					href="https://github.com/{author}"
-					rel="noreferrer noopener"
-					{...externalLink}
-				>
-					{author}
-				</a>
-			</object>
-			<span>{
-				new Date(date.replace(/-/g, "/").replace(/T.+/, "")).toLocaleDateString("en-US", {
-					year: "numeric",
-					day: "numeric",
-					month: "short"
-				})
-			}</span>
-		</div>
+		{#if author === "RiversideValley"}
+			<img
+				style="inline-size: 36px; block-size: 36px;"
+				alt="{author} avatar"
+				loading="lazy"
+				src="https://github.com/{author}.png"
+			>
+			<div class="post-info">
+				<object aria-label="Author link">
+					<a
+						href="https://github.com/{author}"
+						rel="noreferrer noopener"
+						{...externalLink}
+					>
+						Riverside Valley
+					</a>
+				</object>
+			</div>
+		{:else}
+			<img
+				style="inline-size: 36px; block-size: 36px; border: 1px solid var(--fds-card-stroke-default); border-radius: 50%;"
+				alt="{author} avatar"
+				loading="lazy"
+				src="https://github.com/{author}.png"
+			>
+			<div class="post-info">
+				<object aria-label="Author link">
+					<a
+						href="https://github.com/{author}"
+						rel="noreferrer noopener"
+						{...externalLink}
+					>
+						{author}
+					</a>
+				</object>
+			</div>
+		{/if}
 	</footer>
 	<slot />
 </a>

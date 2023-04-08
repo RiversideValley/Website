@@ -13,6 +13,8 @@
 	import Book from "@fluentui/svg-icons/icons/book_24_regular.svg?raw";
 	import News from "@fluentui/svg-icons/icons/news_24_regular.svg?raw";
 	import Person from "@fluentui/svg-icons/icons/person_24_regular.svg?raw";
+	import YouTube from "@fluentui/svg-icons/icons/video_clip_24_filled.svg?raw";
+	import Figma from "@fluentui/svg-icons/icons/design_ideas_24_filled.svg?raw"
 	import Mail from "@fluentui/svg-icons/icons/mail_24_filled.svg?raw"
 	import Twitter from "$static/ui/icons/twitter.svg?raw";
 	import Discord from "$static/ui/icons/discord.svg?raw";
@@ -59,6 +61,16 @@
 			label: "Twitter",
 			href: `https://twitter.com/${ links.twitter }`,
 			icon: Twitter
+		},
+		{
+			label: "YouTube",
+			href: `https://youtube.com/${ links.youtube }`,
+			icon: YouTube
+		},
+		{
+			label: "Figma",
+			href: `https://figma.com/${ links.figma }`,
+			icon: Figma
 		},
 		{
 			label: "Mail",

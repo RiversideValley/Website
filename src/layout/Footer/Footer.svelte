@@ -1,7 +1,10 @@
 <script lang="ts">
+	import { navigating, page } from "$app/stores";
+	import type { NavbarItem } from "$data/links";
+
 	import { externalLink, PageSection } from "$lib";
 	import { Button, IconButton } from "fluent-svelte";
-	import { links, NavbarItem } from "$data/links";
+	import { links } from "$data/links";
 	import Discord from "$static/ui/icons/discord.svg?raw";
 	import Github from "$static/ui/icons/github.svg?raw";
 	import Twitter from "$static/ui/icons/twitter.svg?raw";
@@ -11,6 +14,9 @@
 	let sidebarVisible = false;
 	let sidebar: HTMLElement;
 	let sidebarButton: HTMLButtonElement;
+
+	export let items: NavbarItem[] = [];
+	export let buttons = [];
 
 	const toggleSidebar = () => {
 		sidebarVisible = !sidebarVisible;
@@ -42,6 +48,7 @@
 			</picture>
 			Riverside Valley
 		</a>
+		<p> Copyright ©️ 2023 Riverside Valley Corporation </p>
 		<div class="social-links">
 			<IconButton
 				href="https://github.com/{links.github}/"
@@ -76,31 +83,20 @@
 				{@html Mail}
 			</IconButton>
 		</div>
-		<p></p>
-		<a href="https://vercel.app" {...externalLink}>
-			<picture>
-				<source media="(prefers-color-scheme: dark)" srcset="/branding/vercel-dark.svg">
-				<source media="(prefers-color-scheme: light)" srcset="/branding/vercel-light.svg">
-				<img alt= "Powered by Vercel" src="/branding/vercel-dark.png" width="192">
-			</picture>
-		</a>
-	</div>
-	<p> </p>
-	<div class="column">
-		<p>Pages</p>
-		<Button variant="hyperlink" sveltekit:prefetch href="/">
-			Home
-		</Button>
-		<Button variant="hyperlink" sveltekit:prefetch href="/docs">
-			Documentation
-		</Button>
-		<Button variant="hyperlink" sveltekit:prefetch href="/blog">
-			Blog
-		</Button>
-		<Button variant="hyperlink" sveltekit:prefetch href="/about">
-			About
-		</Button>
-	</div>
+		<div class="social-links column">
+			<Button variant="accent" sveltekit:prefetch href="/">
+				Home
+			</Button>
+			<Button variant="accent" sveltekit:prefetch href="/docs">
+				Documentation
+			</Button>
+			<Button variant="accent" sveltekit:prefetch href="/blog">
+				Blog
+			</Button>
+			<Button variant="accent" sveltekit:prefetch href="/about">
+				About
+			</Button>
+		</div>
 </PageSection>
 
 <style lang="scss">

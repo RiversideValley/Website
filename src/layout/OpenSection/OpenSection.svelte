@@ -12,7 +12,7 @@
 		<div class="community-section-text">
 			<HeaderChip>
 			<!-- svelte-ignore a11y-missing-attribute -->
-			<img src="https://img.icons8.com/fluency/coworking">
+			<img src="ui/emoji/wave.png" width="48">
 			</HeaderChip>
 			<h2>A thriving team</h2>
 			<p>

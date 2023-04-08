@@ -3,8 +3,8 @@ import type { DocsMap } from "$data/docs";
 export const links = {
 	github: "RiversideValley",
 	twitter: "RIVERS1D3",
-	youtube: "RiversideValley",
-	figma: "Riverside",
+	youtube: "@RiversideValley",
+	figma: "@Riverside",
 	discord: "invite/Z74UAQ5vPR",
 	mail: {
 		business: "business@theriversi.de",

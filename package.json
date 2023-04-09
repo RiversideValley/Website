@@ -1,7 +1,7 @@
 {
-	"name": "Codrex",
+	"name": "theriversi.de",
 	"version": "1",
-	"repository": "https://github.com/developerwow64/developerweb64",
+	"repository": "https://github.com/RiversideValley/Website",
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",

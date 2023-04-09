@@ -38,10 +38,6 @@
 
 <PageSection id="blog">
 	<div class="blog-backdrop">
-		style="
-			--hero-background-image-light: url(/en-us/media/home-and-directory/home-hero_light.png?branch=main);
-			--hero-background-image-dark: url(/en-us/media/home-and-directory/home-hero_dark.png?branch=main);
-		"
 		<picture>
 			<source srcset="https://learn.microsoft.com/en-us/media/home-and-directory/home-hero_light.png?branch=main" media="(prefers-color-scheme: light)" />
 			<source srcset="https://learn.microsoft.com/en-us/media/home-and-directory/home-hero_dark.png?branch=main" media="(prefers-color-scheme: dark)" />

@@ -12,7 +12,7 @@
 	import { Metadata, externalLink } from "$lib";
 	import Share from "@fluentui/svg-icons/icons/share_24_regular.svg?raw";
 	import ArrowLeft from "@fluentui/svg-icons/icons/arrow_left_24_regular.svg?raw";
-	import { IconButton, MenuFlyout, MenuFlyoutItem } from "fluent-svelte";
+	import { IconButton, InfoBar, InfoBadge } from "fluent-svelte";
 
 	export let post: {
 		metadata: {
@@ -21,10 +21,11 @@
 			thumbnail: string;
 			date: string;
 			author: string;
+			wip: boolean;
 		}
 	};
 
-	const { title, thumbnail, author, date } = post.metadata;
+	const { title, thumbnail, author, date, wip } = post.metadata;
 </script>
 
 <svelte:head>
@@ -68,6 +69,14 @@
 			>
 				{@html Share}
 			</IconButton>
+			{#if wip}
+			<InfoBadge
+				aria-label="Work in progress"
+				class="wip"
+				severity="caution"
+				title="Work in progress"
+			/>
+			{/if}
 		</div>
 		{:else}
 		<div class="post-info">
@@ -92,7 +101,27 @@
 			>
 				{@html Share}
 			</IconButton>
+			{#if wip}
+				<InfoBadge
+					aria-label="Work in progress"
+					class="wip"
+					severity="caution"
+					title="Work in progress"
+				/>
+			{/if}
 		</div>
+		{/if}
+		{#if wip}
+			<InfoBar
+				aria-label="Work in progress"
+				severity="caution"
+				class="wip"
+				icon="Info"
+				title="Work in progress"
+				message="{title} is a work in progress. That means that the project is not yet finished, and may not work as expected."
+				placement="bottom"
+			/>
+			<br/>
 		{/if}
 		{#if thumbnail}
 			<img class="post-thumbnail" src={thumbnail} alt="Thumbnail">

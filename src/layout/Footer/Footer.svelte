@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { navigating, page } from "$app/stores";
 	import type { NavbarItem } from "$data/links";
 
 	import { externalLink, PageSection } from "$lib";
@@ -14,9 +13,6 @@
 	let sidebarVisible = false;
 	let sidebar: HTMLElement;
 	let sidebarButton: HTMLButtonElement;
-
-	export let items: NavbarItem[] = [];
-	export let buttons = [];
 
 	const toggleSidebar = () => {
 		sidebarVisible = !sidebarVisible;
@@ -38,7 +34,9 @@
 <svelte:window bind:innerWidth on:click={handleOuterClick} />
 
 <PageSection type="footer" id="page-footer">
-	<div class="rainbow-background"/>
+	{#if innerWidth > 912}
+		<div class="rainbow-background"/>
+	{/if}
 	<div class="column">
 		<a class="logo" href="/" sveltekit:prefetch>
 			<picture>

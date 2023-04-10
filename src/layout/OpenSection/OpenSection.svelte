@@ -47,7 +47,7 @@
 						{:catch err}
 							{#each Array(35) as _}
 								<Contributor
-									name="Lucius Andrex"
+									name="Lucius Lamparter"
 									login="Lamparter"
 									html_url="https://github.com/Lamparter"
 									avatar_url="https://avatars.githubusercontent.com/Lamparter"

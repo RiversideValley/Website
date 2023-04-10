@@ -5,7 +5,6 @@
 	export let html_url = "Undefined";
 	export let avatar_url = "Undefined";
 	export let login = "Undefined";
-	export let location = "Undefined";
 </script>
 
 <a

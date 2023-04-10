@@ -29,7 +29,7 @@
 	<div class="features-section-right">
 		<HeaderChip>
 			<!-- svelte-ignore a11y-missing-attribute -->
-			<img src="ui/emoji/lightbulb.png" width="48">
+			<img src="ui/emoji/idea.png" width="48">
 		</HeaderChip>
 		<h2>Our ideas</h2>
 		<p>

@@ -6,7 +6,6 @@ export type ContributorData = {
 	login: string;
 	avatar_url: string;
 	html_url: string;
-	type: "User" | "Bot";
 };
 
 // Returns a list of 25 paged contributors to the

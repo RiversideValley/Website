@@ -2,7 +2,7 @@
 	import { getContributors } from "$data/community";
 	import { links } from "$data/links";
 	import { Contributor, externalLink, HeaderChip, PageSection } from "$lib";
-	import { Button, TextBlock } from "fluent-svelte";
+	import { Button } from "fluent-svelte";
 	// Fetch contributors for the community section
 	const contributorRows = [getContributors(35)]
 </script>
@@ -36,22 +36,19 @@
 				{#each contributorRows as contributorsPromise}
 					<div class="contributors-row">
 						{#await contributorsPromise then contributors}
-							{#each contributors.sort(() => Math.random() - 0.5) as { html_url, avatar_url, login, type }}
+							{#each contributors.sort(() => Math.random() - 0.5) as { html_url, avatar_url, login }}
 								<Contributor
 									{login}
 									{html_url}
 									{avatar_url}
-									{type}
 								/>
 							{/each}
 						{:catch err}
 							{#each Array(35) as _}
 								<Contributor
-									name="Lucius Lamparter"
 									login="Lamparter"
 									html_url="https://github.com/Lamparter"
 									avatar_url="https://avatars.githubusercontent.com/Lamparter"
-									type="User"
 								/>
 							{/each}
 						{/await}

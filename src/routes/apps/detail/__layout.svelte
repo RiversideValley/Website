@@ -29,7 +29,7 @@
 </script>
 
 <svelte:head>
-	<Metadata title="{title}" image={thumbnail} />
+	<Metadata title="Riverside | The future of computing starts now." image={thumbnail} />
 </svelte:head>
 
 <section class="blog-post">

@@ -17,9 +17,9 @@ export const get: RequestHandler = async () => {
 
 	const posts = await Promise.all(body);
 
-	posts.sort((a, b) => {
-		return +new Date(b.metadata.date) - +new Date(a.metadata.date);
-	});
+	// Randomise the order of the posts.
+
+	posts.sort(() => Math.random() - 0.5);
 
 	return { body: posts };
 };

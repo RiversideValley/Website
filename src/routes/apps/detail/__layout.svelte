@@ -25,7 +25,7 @@
 		}
 	};
 
-	const { title, thumbnail, author, date, wip } = post.metadata;
+	const { title, description, thumbnail, author, date, wip } = post.metadata;
 </script>
 
 <svelte:head>

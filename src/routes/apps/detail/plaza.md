@@ -49,7 +49,7 @@ Unit used is the most high-end model of Raspberry Pi, running Ubuntu.
 
 Copyright (c) 2023 Riverside Valley Corporation (+ [`mastodon authors`](https://github.com/mastodon/mastodon/blob/main/AUTHORS.md))
 
-Licensed under GNU Affero General Public License as stated in the [LICENSE](LICENSE.md):
+Licensed under GNU Affero General Public License as stated in the [LICENSE](https://github.com/RiversideValley/Plaza/blob/main/LICENSE.md):
 
 ```
 

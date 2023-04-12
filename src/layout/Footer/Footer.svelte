@@ -81,17 +81,6 @@
 				{@html Mail}
 			</IconButton>
 		</div>
-		<div class="social-links column">
-			<Button variant="accent" sveltekit:prefetch href="/">
-				Home
-			</Button>
-			<Button variant="accent" sveltekit:prefetch href="/apps">
-				Appcenter
-			</Button>
-			<Button variant="accent" sveltekit:prefetch href="/about">
-				Who we are
-			</Button>
-		</div>
 </PageSection>
 
 <style lang="scss">

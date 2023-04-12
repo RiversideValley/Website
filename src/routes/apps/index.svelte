@@ -19,7 +19,6 @@
 			description: string;
 			author: string;
 			thumbnail: string;
-			date: string;
 		};
 	}
 

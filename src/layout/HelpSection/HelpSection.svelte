@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { links } from "$data/links";
-	import { Contributor, HeaderChip, PageSection } from "$lib";
-	import { Button } from "fluent-svelte";
+	import { externalLink, HeaderChip, PageSection } from "$lib";
+	import { Button, TextBlock } from "fluent-svelte";
 </script>
 
 <PageSection id="community-section">
@@ -12,12 +12,27 @@
 			<img src="ui/emoji/sponsor.png" width="48">
 			</HeaderChip>
 			<h2>You can help too.</h2>
-			<h4>And that's not just financially.</h4>
+			<br/>
+			<HeaderChip>Every contribution is valuable, no matter how small.</HeaderChip>
+			<br/>
+			<br/>
+			<!--The amount of breaks here is just too ugly..-->
+			<div class="buttons-spacer">
+				<Button variant="accent" href="https://github.com/sponsors/{links.github}" {...externalLink}>
+					Help financially
+				</Button>
+				<Button variant="hyperlink" href="https://github.com/orgs/{links.github}/repositories" {...externalLink}>
+					Help by contribution
+				</Button>
+				<Button variant="hyperlink" href="mailto:{links.mail.apply}" {...externalLink}>
+					Help by being one of us
+				</Button>
+			</div>
 			<p>
-				Flux - making the world's best 'fkcd' programming language.
-				Flux aims to bring coding to all ages, as well as making it easier for those already coding.
-				Because of Flux's 'fkcd' architecture it sports the ability to process normal Python code, as well as its own, making the perfect transition.
-				Heaven for any developer.
+				Want to help us out? We're always looking for new contributors and members to join our team.
+			</p>
+			<p>
+				There are so many ways you can help us out! You can help us financially, by contributing to our codebase, or by joining our team.
 			</p>
 		</div>
 		<div class="rainbow-background"></div>

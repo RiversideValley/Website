@@ -40,9 +40,9 @@
 	<div class="column">
 		<a class="logo" href="/" sveltekit:prefetch>
 			<picture>
-				<source media="(prefers-color-scheme: dark)" srcset="/branding/logo.png">
-				<source media="(prefers-color-scheme: light)" srcset="/branding/logo.png">
-				<img alt="Riverside logo" height="32" src="/branding/logo.png" width="32">
+				<source media="(prefers-color-scheme: dark)" srcset="{links.cdn.content}/Branding/Logo.png">
+				<source media="(prefers-color-scheme: light)" srcset="{links.cdn.content}/Branding/Logo.png">
+				<img alt="Riverside logo" height="32" src="{links.cdn.content}/Branding/Logo.png" width="32">
 			</picture>
 			Riverside Valley
 		</a>

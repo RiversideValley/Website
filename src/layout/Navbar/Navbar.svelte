@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { navigating, page } from "$app/stores";
 	import type { NavbarItem } from "$data/links";
+	import { links } from "$data/links";
 
 	import { externalLink, TreeView } from "$lib";
 	import { ListItem, Tooltip, TextBlock } from "fluent-svelte";
@@ -44,17 +45,17 @@
 			<picture>
 				<source
 					media="(prefers-color-scheme: dark)"
-					srcset="/branding/logo.png"
+					srcset="{links.cdn.content}/Branding/Logo.png"
 				>
 				<source
 					media="(prefers-color-scheme: light)"
-					srcset="/branding/logo.png"
+					srcset="{links.cdn.content}/Branding/Logo.png"
 				>
 				<img
 					alt="Riverside Logo"
 					class="logo-image"
 					height="32"
-					src="/branding/logo.png"
+					src="{links.cdn.content}/Branding/Logo.png"
 					width="32"
 				>
 			</picture>

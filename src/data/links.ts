@@ -10,6 +10,11 @@ export const links = {
 		business: "business@theriversi.de",
 		support: "support@theriversi.de",
 		apply: "apply@theriversi.de"
+	},
+	cdn: {
+		download: "https://flare.esmerelda.tech",
+		content: "https://cloud.esmerelda.tech",
+		js: "https://components.esmerelda.tech"
 	}
 };
 

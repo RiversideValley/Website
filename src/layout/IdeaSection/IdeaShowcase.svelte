@@ -2,7 +2,7 @@
 	import EmeraldShowcase from "./emerald/EmeraldShowcase.svelte";
 	import FluxShowcase from "./flux/FluxShowcase.svelte";
 	import InspireShowcase from "./inspire/InspireShowcase.svelte";
-	import ProtocolShowcase from "./protocol/ProtocolShowcase.svelte";
+	import OtherShowcase from "./other/OtherShowcase.svelte";
 	import "./IdeaShowcase.scss";
 
 	export let feature = 0;
@@ -15,5 +15,5 @@
 {:else if feature === 2}
 	<InspireShowcase />
 {:else if feature === 3}
-	<ProtocolShowcase />
+	<OtherShowcase />
 {/if}

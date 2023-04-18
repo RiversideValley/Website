@@ -92,7 +92,7 @@
 	<meta content="website" name="og:type">
 
 	<link
-		href="/branding/logo.png"
+		href="{links.cdn.content}/Branding/Logo.png"
 		rel="icon"
 		type="image/svg+xml"
 	>
@@ -102,6 +102,11 @@
 	>
 
 	<meta content="#084840" name="theme-color">
+
+	<meta content="Riverside Valley" name="author" />
+
+	<meta content="@RIVERS1D3" name="twitter:site" />
+	<meta content="@RIVERS1D3" name="twitter:creator" />
 
 </svelte:head>
 

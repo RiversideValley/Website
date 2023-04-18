@@ -27,17 +27,17 @@
 		<picture>
 			<source
 				media="(prefers-color-scheme: dark)"
-				srcset="/branding/banner-white.png"
+				srcset="{links.cdn.content}/Branding/Banner.png"
 			>
 			<source
 				media="(prefers-color-scheme: light)"
-				srcset="/branding/banner.png"
+				srcset="{links.cdn.content}/Branding/Banner.png"
 			>
 			<img
 				alt="Riverside Banner"
 				class="logo-image"
 
-				src="/branding/banner.png"
+				src="{links.cdn.content}/Branding/Banner.png"
 			>
 		</picture>
 		<div class="about">

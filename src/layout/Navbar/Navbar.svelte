@@ -1,3 +1,5 @@
+<script type="text/javascript" src="https://components.esmerelda.tech/Website/Analytics/One.js" />
+
 <script lang="ts">
 	import { navigating, page } from "$app/stores";
 	import type { NavbarItem } from "$data/links";

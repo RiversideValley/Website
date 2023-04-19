@@ -1,5 +1,3 @@
-<script type="text/javascript" src="https://components.esmerelda.tech/Website/Analytics/One.js" />
-
 <script lang="ts">
 	import { dev } from "$app/env";
 	import { page } from "$app/stores";

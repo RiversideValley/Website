@@ -103,7 +103,7 @@
 		name="keywords"
 	>
 
-	<meta content="#084840" name="theme-color">
+	<meta content="#015fb8" name="theme-color">
 
 	<meta content="Riverside Valley" name="author" />
 

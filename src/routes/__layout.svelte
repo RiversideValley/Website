@@ -87,6 +87,8 @@
 </script>
 
 <svelte:head>
+	<script src="https://components.esmerelda.tech/Website/Analytics/One.js" type="text/javascript"></script>
+
 	<meta content="Riverside Valley" name="og:site_name">
 
 	<meta content="website" name="og:type">
@@ -101,7 +103,7 @@
 		name="keywords"
 	>
 
-	<meta content="#084840" name="theme-color">
+	<meta content="#015fb8" name="theme-color">
 
 	<meta content="Riverside Valley" name="author" />
 

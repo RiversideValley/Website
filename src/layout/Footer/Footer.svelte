@@ -84,9 +84,9 @@
 		<br/>
 		<a href="https://vercel.com/?utm_source=riversidevalley&utm_campaign=oss" {...externalLink}>
 			<picture>
-				<source media="(prefers-color-scheme: dark)" srcset="{links.cdn.content}/Branding/Clientele/Vercel/BusinessConcepts/OSSInitiative/Banner.Dark.png">
-				<source media="(prefers-color-scheme: light)" srcset="{links.cdn.content}/Branding/Clientele/Vercel/BusinessConcepts/OSSInitiative/Banner.Light.png">
-				<img alt= "Powered by Vercel" src="{links.cdn.content}/Branding/Clientele/Vercel/BusinessConcepts/OSSInitiative/Banner.Dark.png" width="192">
+				<source media="(prefers-color-scheme: dark)" srcset="{links.cdn.content}/Branding/Clientele/Vercel/BusinessConcepts/OSSInitiative/Banner.Dark.svg">
+				<source media="(prefers-color-scheme: light)" srcset="{links.cdn.content}/Branding/Clientele/Vercel/BusinessConcepts/OSSInitiative/Banner.Light.svg">
+				<img alt= "Powered by Vercel" src="{links.cdn.content}/Branding/Clientele/Vercel/BusinessConcepts/OSSInitiative/Banner.Dark.svg" width="192">
 			</picture>
 		</a>
 </PageSection>

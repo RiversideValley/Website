@@ -81,6 +81,14 @@
 				{@html Mail}
 			</IconButton>
 		</div>
+		<br/>
+		<a href="https://vercel.app" {...externalLink}>
+			<picture>
+				<source media="(prefers-color-scheme: dark)" srcset="/branding/vercel-dark.svg">
+				<source media="(prefers-color-scheme: light)" srcset="/branding/vercel-light.svg">
+				<img alt= "Powered by Vercel" src="/branding/vercel-dark.png" width="192">
+			</picture>
+		</a>
 </PageSection>
 
 <style lang="scss">

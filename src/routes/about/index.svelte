@@ -27,7 +27,7 @@
 		<picture>
 			<source
 				media="(prefers-color-scheme: dark)"
-				srcset="{links.cdn.content}/Branding/Banner.png"
+				srcset="{links.cdn.content}/Branding/Banner.White.png"
 			>
 			<source
 				media="(prefers-color-scheme: light)"

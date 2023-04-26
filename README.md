@@ -2,7 +2,7 @@
 
 #### The starting page for everything related to Riverside — news included!
 
-[Powered by Vercel ▲](https://vercel.com/?utm_source=RiversideValley)
+[Powered by Vercel ▲](https://vercel.com/?utm_source=RiversideValley&utm-campaign=oss)
 
 ---
 

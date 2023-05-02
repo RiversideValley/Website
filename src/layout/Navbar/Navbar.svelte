@@ -94,9 +94,9 @@
 		<!--<Tooltip text="Merry Christmas!" placement="bottom" delay={200} offset={0}>
 			<span class="seasonal-message" aria-label="Christmas Tree to signify Christmas time is near, Merry Christmas!"></span>
 		</Tooltip>-->
-		<Tooltip text="Eid Mubarak!" placement="bottom" delay={200} offset={0}>
+		<!--<Tooltip text="Eid Mubarak!" placement="bottom" delay={200} offset={0}>
 			<span class="seasonal-message"></span>
-		</Tooltip>
+		</Tooltip>-->
 		{#if innerWidth > 648}
 			{#each buttons as { icon, href, label }}
 				<a

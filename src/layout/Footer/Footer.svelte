@@ -47,40 +47,6 @@
 			Riverside Valley
 		</a>
 		<p> Copyright ©️ 2023 Riverside Valley Corporation </p>
-		<div class="social-links">
-			<IconButton
-				href="https://github.com/{links.github}/"
-				title="GitHub"
-				aria-label="GitHub"
-				{...externalLink}
-			>
-				{@html Github}
-			</IconButton>
-			<IconButton
-				href="https://twitter.com/{links.discord}/"
-				title="Discord"
-				aria-label="Discord"
-				{...externalLink}
-			>
-				{@html Discord}
-			</IconButton>
-			<IconButton
-				href="https://twitter.com/{links.twitter}/"
-				title="Twitter"
-				aria-label="Twitter"
-				{...externalLink}
-			>
-				{@html Twitter}
-			</IconButton>
-			<IconButton
-				href="mailto:{links.mail.business}/"
-				title="Mail"
-				aria-label="Mail"
-				{...externalLink}
-			>
-				{@html Mail}
-			</IconButton>
-		</div>
 </PageSection>
 
 <style lang="scss">

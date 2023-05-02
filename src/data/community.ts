@@ -22,3 +22,26 @@ export const getContributors: (
 			console.error(err);
 			return "";
 		});
+
+export type AppData = {
+	metadata: {
+		title: string;
+		description: string;
+		thumbnail?: string;
+		author: string;
+		wip?: boolean;
+	};
+	path: string;
+};
+
+export const getApps: () => Promise<AppData[]> = async () =>
+	await fetch(
+		`/apps.json`
+	)
+		// Parse body to object
+		.then(result => result.json())
+		// Error handler
+		.catch(err => {
+			console.error(err);
+			return "";
+		});

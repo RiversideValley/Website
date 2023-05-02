@@ -10,11 +10,8 @@
 <PageSection id="community-section">
 	<div class="community-section-card">
 		<div class="community-section-text">
-			<HeaderChip>
-			<!-- svelte-ignore a11y-missing-attribute -->
-			<img src="ui/emoji/wave.png" width="48">
-			</HeaderChip>
-			<h2>A thriving team</h2>
+			<HeaderChip>Designed for developers</HeaderChip>
+			<h2>An ecosystem built with developers in mind.</h2>
 			<p>
 				This is a selection of people who are part of Riverside Valley. They are inspiring workers who would do anything for the community.
 			</p>

@@ -7,7 +7,7 @@
 }
 
 .navbar {
-	position: relative;
+	position: sticky;
 	z-index: 10;
 	justify-content: space-between;
 	flex: 0 0 auto;
@@ -117,6 +117,23 @@
 	:global(svg) {
 		transition: 130ms cubic-bezier(0.16, 0.16, 0, 1) transform;
 		@include icon($size: 18px);
+	}
+}
+
+.left {
+	left: 100%;
+}
+
+.right {
+	right: 50%;
+	top: 50%;
+}
+
+.flyout {
+
+
+	.general {
+
 	}
 }
 

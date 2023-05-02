@@ -2,9 +2,12 @@
 	import { navigating, page } from "$app/stores";
 	import type { NavbarItem } from "$data/links";
 	import { links } from "$data/links";
+	import { getApps } from "$data/community";
 
-	import { externalLink, TreeView } from "$lib";
-	import { ListItem, Tooltip, TextBlock } from "fluent-svelte";
+	const apps = [getApps()]
+
+	import { externalLink, TreeView, ProductCard } from "$lib";
+	import { ListItem, Button, Flyout, MenuFlyout, MenuFlyoutItem, MenuFlyoutDivider } from "fluent-svelte";
 	import Navigation from "@fluentui/svg-icons/icons/navigation_24_regular.svg?raw";
 	
 	export let items: NavbarItem[] = [];
@@ -34,6 +37,7 @@
 	$: {
 		$navigating && (sidebarVisible = false);
 	}
+
 </script>
 
 <svelte:window bind:innerWidth on:click={handleOuterClick} />
@@ -65,28 +69,57 @@
 	<div class="buttons">
 		{#if innerWidth > 648}
 			<div class="divider"></div>
-			{#each items as { name, path, external, icon, type }}
+			{#each items as { name, path, external, type, bar }}
 				{#if type === "divider"}
 					<div class="divider"></div>
 				{:else}
-					<a
-						class="item"
-						sveltekit:prefetch
-						class:selected={$page.url.pathname === path ||
-						($page.url.pathname.split("/").length > 1 &&
-							path.split("/").length > 1 &&
-							$page.url.pathname.startsWith(path) &&
-								!(path === "" || path === "/")) ||
-							(path === "/" && $page.url.pathname === "")}
-						href={path}
-						target={external ? "_blank" : undefined}
-						rel={external ? "noreferrer noopener" : undefined}
-					>
-						{#if icon}
-							{@html icon}
-						{/if}
-						<span>{name}</span>
-					</a>
+					<MenuFlyout bind:bar placement="bottom">
+						<!-- svelte-ignore a11y-missing-attribute -->
+						<a	
+							on:click={() => (bar = true)}
+							class="item"
+							target={external ? "_blank" : undefined}
+							rel={external ? "noreferrer noopener" : undefined}
+						>
+							<span>{name}</span>
+						</a>
+						<div slot="flyout">
+							{#if name === "Products"}
+								<div>
+									<div>
+										{#if apps.every(it => it)}
+											<div class="contributors-container">
+												{#each apps as appPromise}
+													<div class="contributors-row">
+														{#await appPromise then apps}
+															{#each apps as { metadata, path }}
+																<a href="/apps/{path.split('.md')[0]}">
+																	<MenuFlyoutItem >
+																		{metadata.title}
+																	</MenuFlyoutItem>
+																</a>
+															{/each}
+														{/await}
+													</div>
+												{/each}
+											</div>
+										{/if}
+									</div>
+									<div class="">
+										
+									</div>
+								</div>
+							{:else if name === "Solutions"}
+								<MenuFlyoutItem>
+									abc
+								</MenuFlyoutItem>
+							{:else if name === "Developers"}
+								lal
+							{:else if name === "Resources"}
+								lem
+							{/if}
+						</div>
+					</MenuFlyout>
 				{/if}
 			{/each}
 		{/if}
@@ -98,14 +131,18 @@
 			<span class="seasonal-message"></span>
 		</Tooltip>-->
 		{#if innerWidth > 648}
-			{#each buttons as { icon, href, label }}
+			{#each buttons as { icon, href, label, accent }}
 				<a
-					class="button"
+					class="item"
 					{href}
-					aria-label={label}
-					title={label}
-					{...externalLink}
-				>{@html icon}</a>
+					sveltekit:prefetch
+					class:selected={true}
+				>
+					{#if icon}
+						{@html icon}
+					{/if}
+					<span>{label}</span>
+				</a>
 			{/each}
 		{:else}
 			<button

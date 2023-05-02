@@ -22,7 +22,9 @@ export type NavbarItem = {
 	name: string;
 	path: string;
 	external?: boolean;
-	icon: any;
 	type?: string;
 	sidebarTree?: DocsMap[];
+	contents?: any;
+	content?: number;
+	bar: boolean;
 };

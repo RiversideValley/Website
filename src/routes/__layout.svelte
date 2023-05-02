@@ -9,69 +9,67 @@
 
 	import "fluent-svelte/theme.css";
 
-	import Home from "@fluentui/svg-icons/icons/home_24_regular.svg?raw";
-	import Book from "@fluentui/svg-icons/icons/book_24_regular.svg?raw";
-	import News from "@fluentui/svg-icons/icons/news_24_regular.svg?raw";
-	import Appcenter from "@fluentui/svg-icons/icons/apps_24_regular.svg?raw";
-	import Person from "@fluentui/svg-icons/icons/person_24_regular.svg?raw";
-	import YouTube from "@fluentui/svg-icons/icons/video_clip_24_filled.svg?raw";
-	import Figma from "@fluentui/svg-icons/icons/design_ideas_24_filled.svg?raw"
-	import Mail from "@fluentui/svg-icons/icons/mail_24_filled.svg?raw"
-	import Twitter from "$static/ui/icons/twitter.svg?raw";
-	import Discord from "$static/ui/icons/discord.svg?raw";
-	import GitHub from "$static/ui/icons/github.svg?raw";
+	import Chart from "@fluentui/svg-icons/icons/arrow_trending_lines_24_filled.svg?raw"
 
 	const { github } = links;
 
 	const navbarItems: NavbarItem[] = [
 		{
-			name: "Home",
-			path: "/",
-			icon: Home
-		},
-		{
-			name: "Apps",
+			name: "Products",
 			path: "/apps",
-			icon: Appcenter
+			content: 1,
+			contents: {
+				
+			},
+			bar: false
 		},
 		{
-			name: "About",
+			name: "Solutions",
 			path: "/about",
-			icon: Person
+			content: 1,
+			contents: {
+				
+			},
+			bar: false
+		},
+		{
+			name: "Developers",
+			path: "/developers",
+			content: 1,
+			contents: {
+				
+			},
+			bar: false
+		},
+		{
+			name: "Resources",
+			path: "/resources",
+			content: 1,
+			contents: {
+				
+			},
+			bar: false
 		}
+	//	{
+	//		name: "Pricing",
+	//		path: "",
+	//		icon: Home
+	//	}
 	];
 
 	const navbarButtons = [
 		{
-			label: "GitHub",
-			href: `https://github.com/${ links.github }`,
-			icon: GitHub
-		},
-		{
-			label: "Discord",
-			href: `https://discord.com/${ links.discord }`,
-			icon: Discord
-		},
-		{
-			label: "Twitter",
-			href: `https://twitter.com/${ links.twitter }`,
-			icon: Twitter
-		},
-		{
-			label: "YouTube",
-			href: `https://youtube.com/${ links.youtube }`,
-			icon: YouTube
-		},
-		{
-			label: "Figma",
-			href: `https://figma.com/${ links.figma }`,
-			icon: Figma
-		},
-		{
-			label: "Mail",
-			href: `mailto:${ links.mail.business }`,
-			icon: Mail
+			label: "Contact sales",
+			href: `https://book.ms/sales@theriversi.de`,
+			icon: Chart,
+			accent: true
 		}
+	//  {
+	//  	label: "Sign In",
+	//  	href: "https://esmerelda.tech",
+	//  	icon: Person,
+	//  	accent: true
+	//  }
 	];
 
 	let theme: "light" | "dark" = "light";
